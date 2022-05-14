@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/dark-theme.css">
+        <link rel="stylesheet" href="../assets/css/downloads.css">
+
+        <title>materia</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="/index.html" class="nav__logo">
+                    <img src="../assets/img/logo-black.png" alt=""> materia
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/index.html#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/index.html#about" class="nav__link">About</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="/index.html#products" class="nav__link">Products</a>
+                        </li> -->
+                        <!-- <li class="nav__item">
+                            <a href="/index.html#faqs" class="nav__link">FAQs</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="/index.html#contact" class="nav__link">Contact Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../downloads/downloads.html" class="nav__link active-link">Downloads</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="downloads-main container">
+            <h1>Download materials by year</h1>
+            <ul class="cards">
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_content">
+                    <h2 class="card_title">First year materials</h2>
+                    <p class="card_text">Download course outlines, class slides/notes, and past questions</p>
+                    <button class="button"><a href="">Go to download</a></button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_content">
+                    <h2 class="card_title">Second year materials</h2>
+                    <p class="card_text">Download course outlines, class slides/notes, and past questions</p>
+                    <button class="button"><a href="../downloads/second-year-materials/second-year.html">Go to download</a></button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_content">
+                    <h2 class="card_title">Third year materials</h2>
+                    <p class="card_text">Download course outlines, class slides/notes, and past questions</p>
+                    <button class="button"><a href="">Go to download</a></button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_content">
+                    <h2 class="card_title">Fourth year materials</h2>
+                    <p class="card_text">Download course outlines, class slides/notes, and past questions</p>
+                    <button class="button"><a href="">Go to download</a></button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_content">
+                    <h2 class="card_title">Fifth year materials</h2>
+                    <p class="card_text">Download course outlines, class slides/notes, and past questions</p>
+                    <button class="button"><a href="">Go to download</a></button>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_content">
+                    <h2 class="card_title">Sixth year materials</h2>
+                    <p class="card_text">Download course outlines, class slides/notes, and past questions</p>
+                    <button class="button"><a href="">Go to download</a></button>
+                </div>
+              </li>
+            </ul>
+
+            
+
+            <div class="dynamic-container">
+              <h1 style="color:var(--first-color-lighten);  margin-bottom: 2rem;">Download other materials</h1>
+                <input type="radio" id="tab1" name="tab" checked>
+                <label for="tab1"><i class="ri-book-2-line" style="vertical-align: middle; margin-right: 4px;"></i> Texts</label>
+                <input type="radio" id="tab2" name="tab">
+                <label for="tab2"><i class="ri-video-line" style="vertical-align: middle; margin-right: 4px;"></i> Videos</label>
+                <input type="radio" id="tab3" name="tab">
+                <label for="tab3"><i class="ri-mv-line" style="vertical-align: middle; margin-right: 4px;"></i> Audios</label>
+                <input type="radio" id="tab4" name="tab">
+                <label for="tab4"><i class="ri-settings-line" style="vertical-align: middle; margin-right: 4px;"></i> Others</label>
+                <div class="line"></div>
+                <div class="content-container">
+                  <div class="content" id="c1">
+                    <h3>Textbooks</h3>
+                    <div class="textbook-download">
+                        <h2>Pre-clinicals</h2>
+                        
+                        <h3>Anatomy </h3>
+                        <ul>
+                          <li><a href="#" download="">Clinically Oriented Anatomy (Edition, Size)</a></li>
+                          <li><a href="#" download="">  Langman's Medical Embryology</a></li>
+                          <li><a href="#" download="">  Atlas of Human Anatomy</a></li>
+                          <li><a href="#" download="">  Cunningham Manual of Practical Anatomy, Volume 1</a></li>
+                          <li><a href="#" download="">  Cunningham Manual of Practical Anatomy, Volume 2</a></li>
+                          <li><a href="#" download="">  Cunningham Manual of Practical Anatomy, Volume 3</a></li>
+                          <li><a href="#" download="">  Grant's Atlas of Anatomy</a></li>
+                          <li><a href="#" download="">  Gray's Anatomy</a></li>
+                          <li><a href="#" download="">  Inderbir Singh's Textbook of Human Neuroanatomy</a></li>
+                          <li><a href="#" download="">  The Anatomical Basis of Clinical Practice</a></li>
+                          <li><a href="#" download="">  Junqueira's Basic Histology</a></li>
+                          <li><a href="#" download="">  Wheater's Functional Histology</a></li>
+                          <li><a href="#" download="">  Clinically Oriented Embryology</a></li>
+                        </ul>
+                    
+                        <h3>Biochemistry</h3>
+                        <ul>
+                          <li><a href="#" download="">Textbook of Biochemistry for Medical Students</a></li>
+                          <li><a href="#" download="">Harper's Illustrated Biochemistry</a></li>
+                          <li><a href="#" download="">Harper's Biochemistry</a></li>
+                        </ul>
+                    
+                        <h3>Physiology</h3>
+                        <ul>
+                          <li><a href="#" download="">Essentials of Medical Physiology</a></li>
+                          <li><a href="#" download="">Ganong's Review of Medical Physiology</a></li>
+                          <li><a href="#" download="">Guyton and Hall Textbook of Medical Physiology</a></li>
+                        </ul>
+                      </div>
+                    
+                      <div class="textbook-download">
+                        <h2>Basic Clinical</h2>
+                        
+                        <h3>Hematology</h3>
+                        <ul>
+                          <li>Not available</li>
+                          <li>Not available</li>
+                        </ul>
+                    
+                        <h3>Morbid Anatomy</h3>
+                        <ul>
+                          <li>Not available</li>
+                        </ul>
+                    
+                        <h3>Chemical Pathology</h3>
+                        <ul>
+                          <li>Not available</li>
+                        </ul>
+                    
+                        <h3>Microbiology/Parasitology</h3>
+                        <ul>
+                          <li>Not available</li>
+                        </ul>
+                      </div>
+                    
+                      <div class="textbook-download">
+                        <h2>Clinicals</h2>
+                        
+                        <h3>Medicine</h3>
+                        <ul>
+                          <li>Not available</li>
+                        </ul>
+                    
+                        <h3>Surgery</h3>
+                        <ul>
+                          <li>Not available</li>
+                        </ul>
+                    
+                        <h3>Pediatrics</h3>
+                        <ul>
+                          <li>Not available</li>
+                        </ul>
+                    
+                        <h3>Obsterics and Gynecology</h3>
+                        <ul>
+                          <li>Not available</li>
+                        </ul>
+                      </div>
+ 
+                  </div>
+                  <div class="content" id="c2">
+                    <h3>Videos</h3>
+                    <div class="video-container video-flex">
+                      <div class="video-flex_content viddeo-flex2">
+                          <h2>Osmosis</h2>
+                          <h4>Anatomy</h4>
+                          <span>9.02GB</span>
+                          <ul>
+                              <li>Abdomen</li>
+                              <li>Head and Neck</li>
+                              <li>Thorax</li>
+                              <li>Upper limb</li>
+                          </ul>
+                          <button>
+                              Download
+                          </button>
+                      </div>
+                      <div class="video-flex_content">
+                          <h2>Osmosis</h2>
+                          <h4>Biochemistry</h4>
+                          <span>115MB</span>
+                          <ul>
+                              <li>Carbohydrate metabolism</li>
+                              <li>Protein Metabolism</li>
+                              <li>Lipid metabolism</li>
+                          </ul>
+                          <button>
+                              Download
+                          </button>
+                      </div>
+                  </div>
+                    
+                  </div>
+                  <div class="content" id="c3">
+                    <h3>Audios</h3>
+                    <div class="video-container video-flex">
+                      <div class="video-flex_content viddeo-flex2">
+                          <h2>Audiolearn</h2>
+                          <h4>Biochemistry</h4>
+                          <span>N/A</span>
+                          <ul>
+                              <li>Water and Biochemistry</li>
+                              <li>Proteins and Amino Acids</li>
+                              <li>Carbohydrates and Sugars</li>
+                              <li>Lipids and Fatty Acids</li>
+                              <li>DNA, RNA and Nucleotides</li>
+                              <li>Enzymes and Enzymology</li>
+                              <li>Aerobic Metabolism</li>
+                              <li>Anaerobic Metabolism</li>
+                              <li>Glucose Catabolism</li>
+                              <li>Citric Acid Cycle</li>
+                              <li>Gluconeogenesis and Glycogenesis</li>
+                              <li>Biochemistry in Medicine</li>
+                          </ul>
+                          <button>
+                              Download
+                          </button>
+                      </div>
+                      <div class="video-flex_content">
+                          <h2>Audiolearn</h2>
+                          <h4>Physiology</h4>
+                          <span>N/A</span>
+                          <ul>
+                              <li>Basic cell processes</li>
+                              <li>Metabolic Physiology</li>
+                              <li>Endocrine System Physiology</li>
+                              <li>Central nervous system physiology</li>
+                              <li>Autonomic Nervous System physiology</li>
+                              <li>Musculoskeletal physiology</li>
+                              <li>Cardioascular system physiology</li>
+                              <li>Respiratory system physiology</li>
+                              <li>Immune system physiology</li>
+                              <li>Kidney physiology</li>
+                              <li>Digestive system physiology</li>
+                              <li>Reprodutive system physiology</li>
+                              <li>Skeletal system</li>
+                              <li>Acid-base regulation</li>
+                          </ul>
+                          <button>
+                              Download
+                          </button>
+                      </div>
+                  </div>
+                </div>
+                <div class="content" id="c4">
+                  <h3>Others</h3>
+                  <ul>
+                    <li>Apps</li>
+                    <li>e.t.c.</li>
+                  </ul>
+                </div>
+              </div>
+        </main>
+
+       
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <!-- <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> materia
+                    </a> -->
+                </div>
+
+                <!-- <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">1234 - Peru</li>
+                        <li class="footer__information">Won Wami - 43210</li>
+                        <li class="footer__information">123-456-789</li>
+                    </ul>
+                </div> -->
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+999 888 777</li>
+                        
+                        <!-- <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div> -->
+                    </ul>
+                </div>
+
+                <!-- <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div> -->
+            </div>
+
+            <p class="footer__copy">&#169; materia. All rigths reserved</p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <!-- <script src="../assets/js/scrollreveal.min.js"></script> -->
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/prog-table.js"></script>
+
+    </body>
+</html>
