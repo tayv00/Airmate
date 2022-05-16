@@ -83,6 +83,10 @@ body .dynamic-container {
     margin-top: 8.5rem;
     background-color: var(--first-color);
   }
+
+  body .second-year-materials { 
+    margin-top: 2.5rem;
+  }
   body .dynamic-container input {
     display: none;
   }
