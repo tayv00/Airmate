@@ -509,3 +509,24 @@ input {
     padding: 0 80px;
   }
 }
+
+
+
+.prev-next .btn {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 15px auto;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.prev-next  {
+  display: flex;
+  justify-content: space-between;
+} 
