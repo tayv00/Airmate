@@ -395,30 +395,30 @@ img{
   margin-top: .15rem;
 }
 
-/*=============== STEPS ===============*/
-.steps__bg{
+/*=============== LEVELS ===============*/
+.level__bg{
   background-color: var(--first-color);
   padding: 3rem 2rem 2rem;
   border-radius: 1rem;
 }
 
-.steps__container{
+.level__container{
   gap: 2rem;
   padding-top: 1rem;
 }
 
-.steps__title{
+.level__title{
   color: #FFF;
 }
 
-.steps__card{
+.level__card{
   background-color: var(--container-color);
   padding: 2.5rem 3rem 2rem 1.5rem;
   border-radius: 1rem;
   /* position: relative; */
 }
 
-.steps__card-number{
+.level__card-name{
   display: inline-block;
   background-color: var(--first-color);
   color: var(--first-color-lighten);
@@ -430,20 +430,20 @@ img{
   /* position: absolute; */
 }
 
-.steps__card-number a{
+.level__card-name a{
   color: var(--first-color-lighten);
 }
 
-.steps__card-title{
+.level__card-title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
 }
 
-.steps__card-description{
+.level__card-description{
   font-size: var(--small-font-size);
 }
 
-.steps__card:hover .steps__card-number{
+.level__card:hover .level__card-name{
   transform: translateY(-.25rem);
 }
 
@@ -511,42 +511,42 @@ img{
   transform: translateY(-.5rem);
 }
 
-/*=============== QUESTIONS ===============*/
-.questions{
+/*===============POSTINGS [originally QUESTIONS]===============*/
+.accordion{
   background-color: var(--first-color-lighten);
 }
 
-.questions__container{
+.accordion__container{
   gap: 1.5rem;
   padding: 1.5rem 0;
 }
 
-.questions__group{
+.accordion__group{
   display: grid;
   row-gap: 1.5rem;
 }
 
-.questions__item{
+.accordion__item{
   background-color: var(--container-color);
   /* border-radius: .25rem; */
 }
 
-.questions__item-title{
+.accordion__item-title{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
 
-.questions__icon{
+.accordion__icon{
   font-size: 1.25rem;
   color: var(--title-color);
 }
 
-.questions__description{
+.accordion__description{
   font-size: var(--smaller-font-size);
   padding: 0 1.25rem 1.25rem 2.5rem;
 }
 
-.questions__header{
+.accordion__header{
   display: flex;
   align-items: center;
   column-gap: .5rem;
@@ -554,59 +554,73 @@ img{
   cursor: pointer;
 }
 
-.questions__content{
+.accordion__content{
   overflow: hidden;
   height: 0;
 }
 
-  .questions__content li a{
+  .accordion__content li a{
     margin: 0 0 0px 5px;
     color: #FFF;
     font-size: .88rem;
   }
 
-  .questions__content h3, .questions__content h3 a  {
+  .accordion__content h3, .accordion__content h3 a  {
     margin: 10px 0;
     color: var(--first-color-lighten);
   }
 
-.questions__item,
-.questions__header,
-.questions__item-title,
-.questions__icon,
-.questions__description,
-.questions__content{
+.accordion__item,
+.accordion__header,
+.accordion__item-title,
+.accordion__icon,
+.accordion__description,
+.accordion__content{
   transition: .3s;
 }
 
-.questions__item:hover{
+.accordion__item:hover{
   box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
 }
 
 /*Rotate icon, change color of titles and background*/
-.accordion-open .questions__header,
-.accordion-open .questions__content{
+.accordion-open .accordion__header,
+.accordion-open .accordion__content{
   background-color: var(--first-color);
 }
 
-.accordion-open .questions__item-title,
-.accordion-open .questions__description,
-.accordion-open .questions__icon{
+.accordion-open .accordion__item-title,
+.accordion-open .accordion__description,
+.accordion-open .accordion__icon{
   color: #FFF;
 }
 
-.accordion-open .questions__icon{
+.accordion-open .accordion__icon{
   transform: rotate(45deg);
 }
 
 /*=============== CONTACT ===============*/
 .contact__container{
   row-gap: 3.5rem;
+ 
+}
+
+.contact__box{
+  text-align: center;
+  background-color: var(--first-color-lighten);
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .contact__data{
-  display: grid;
-  row-gap: 2rem;
+  /* display: grid;
+  row-gap: 2rem; */
+ 
+  margin: 20px 0;
+}
+
+.contact__information{
+  margin: 30px 0;
 }
 
 .contact__subtitle{
@@ -844,10 +858,10 @@ footer{
     font-size: var(--h1-font-size);
   }
 
-  .steps__bg{
+  .level__bg{
     padding: 2rem 1rem;
   }
-  .steps__card{
+  .level__card{
     padding: 1.5rem;
   }
 
@@ -860,7 +874,7 @@ footer{
 
 /* For medium devices */
 @media screen and (min-width: 576px){
-  .steps__container{
+  .level__container{
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -902,7 +916,7 @@ footer{
 
   .home__container,
   .about__container,
-  .questions__container,
+  .accordion__container,
   .contact__container,
   .footer__container{
     grid-template-columns: repeat(2, 1fr);
@@ -922,7 +936,7 @@ footer{
     top: 30%;
   }
 
-  .questions__container{
+  .accordion__container{
     align-items: flex-start;
   }
 
@@ -963,13 +977,13 @@ footer{
 
 
 
-  .steps__container{
+  .level__container{
     grid-template-columns: repeat(3, 1fr);
   }
-  .steps__bg{
+  .level__bg{
     padding: 3.5rem 2.5rem;
   }
-  .steps__card-title{
+  .level__card-title{
     font-size: var(--normal-font-size);
   }
 
@@ -993,19 +1007,19 @@ footer{
     font-size: var(--normal-font-size);
   }
 
-  .questions__container{
+  .accordion__container{
     padding: 1rem 0 4rem;
   }
-  .questions__title{
+  .accordion__title{
     text-align: initial;
   }
-  .questions__group{
+  .accordion__group{
     row-gap: 2rem;
   }
-  .questions__header{
+  .accordion__header{
     padding: 1rem;
   }
-  .questions__description{
+  .accordion__description{
     padding: 0 3.5rem 2.25rem 2.75rem;
   }
 
@@ -1065,6 +1079,7 @@ footer{
   max-width: 1000px;
   margin: 50px auto;
   font-size: 0.9em;
+  border-radius: 1rem;
 }
 
 .prog-table-1 table {
@@ -1157,7 +1172,17 @@ or 640px, iPads specifically.
   box-sizing: border-box;
 }
 
-ol.gradient-list > li::before, ol.gradient-list > li {
+.course-name {
+  background-color: var(--first-color);
+  padding: 0.5rem 0 2rem 1rem;
+  color: var(--first-color-light);
+}
+
+.course-name h1{
+  color: var(--first-color-lighten);
+}
+
+ol.topics-list > li::before, ol.topics-list > li {
   box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
 }
 
@@ -1168,13 +1193,13 @@ ol.gradient-list > li::before, ol.gradient-list > li {
   padding: 1rem;
 }
 
-ol.gradient-list {
+ol.topics-list {
   counter-reset: gradient-counter;
   list-style: none;
   margin: 1.75rem 0;
   padding-left: 1rem;
 }
-ol.gradient-list > li {
+ol.topics-list > li {
   background: white;
   counter-increment: gradient-counter;
   margin-top: 1rem;
@@ -1183,10 +1208,10 @@ ol.gradient-list > li {
   position: relative;
 }
 
-ol.gradient-list > li a {
+ol.topics-list > li a {
   color: var(--text-color);
 }
-ol.gradient-list > li::before, ol.gradient-list > li::after {
+ol.topics-list > li::before, ol.topics-list > li::after {
   background: linear-gradient(135deg, #252830 0%, #131417 100%);
   content: "";
   height: 3rem;
@@ -1196,7 +1221,7 @@ ol.gradient-list > li::before, ol.gradient-list > li::after {
   top: -1rem;
   width: 3rem;
 }
-ol.gradient-list > li::before {
+ol.topics-list > li::before {
   align-items: flex-end;
   content: counter(gradient-counter);
   color: #fff;
@@ -1206,37 +1231,37 @@ ol.gradient-list > li::before {
   padding: 0.125em 0.25em;
   z-index: 1;
 }
-ol.gradient-list > li:nth-child(10n+1):before {
+ol.topics-list > li:nth-child(10n+1):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0.2) 0%, rgba(37, 40, 48, 0.2) 100%);
 }
-ol.gradient-list > li:nth-child(10n+2):before {
+ol.topics-list > li:nth-child(10n+2):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0.4) 0%, rgba(37, 40, 48, 0.4) 100%);
 }
-ol.gradient-list > li:nth-child(10n+3):before {
+ol.topics-list > li:nth-child(10n+3):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0.6) 0%, rgba(37, 40, 48, 0.6) 100%);
 }
-ol.gradient-list > li:nth-child(10n+4):before {
+ol.topics-list > li:nth-child(10n+4):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0.8) 0%, rgba(37, 40, 48, 0.8) 100%);
 }
-ol.gradient-list > li:nth-child(10n+5):before {
+ol.topics-list > li:nth-child(10n+5):before {
   background: linear-gradient(135deg, #131417 0%, #252830 100%);
 }
-ol.gradient-list > li:nth-child(10n+6):before {
+ol.topics-list > li:nth-child(10n+6):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0.8) 0%, rgba(37, 40, 48, 0.8) 100%);
 }
-ol.gradient-list > li:nth-child(10n+7):before {
+ol.topics-list > li:nth-child(10n+7):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0.6) 0%, rgba(37, 40, 48, 0.6) 100%);
 }
-ol.gradient-list > li:nth-child(10n+8):before {
+ol.topics-list > li:nth-child(10n+8):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0.4) 0%, rgba(37, 40, 48, 0.4) 100%);
 }
-ol.gradient-list > li:nth-child(10n+9):before {
+ol.topics-list > li:nth-child(10n+9):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0.2) 0%, rgba(37, 40, 48, 0.2) 100%);
 }
-ol.gradient-list > li:nth-child(10n+10):before {
+ol.topics-list > li:nth-child(10n+10):before {
   background: linear-gradient(135deg, rgba(19, 20, 23, 0) 0%, rgba(37, 40, 48, 0) 100%);
 }
-ol.gradient-list > li + li {
+ol.topics-list > li + li {
   margin-top: 2rem;
 }
 

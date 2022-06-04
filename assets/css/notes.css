@@ -258,33 +258,33 @@ h4 {
   background-color: var(--first-color-lighten);
 }
 
-.accordion-open .questions__item-title,
-.accordion-open .questions__icon {
+.accordion-open .accordion__item-title,
+.accordion-open .accordion__icon {
   color: #cfd8ee;
 }
 
-.accordion-open .questions__description {
+.accordion-open .accordion__description {
   color: var(--first-color-light);
 }
 
-.questions__content li a {
+.accordion__content li a {
   color: var(--first-color-light);
   font-size: 0.8rem;
 }
 
-.questions__content li {
+.accordion__content li {
   margin-bottom: .5rem;
 }
 
-.questions__item {
+.accordion__item {
   border-radius: 5px;
 }
 
-.accordion-open .questions__header {
+.accordion-open .accordion__header {
   border-radius: 5px 5px 0 0;
 }
 
-.accordion-open .questions__content {
+.accordion-open .accordion__content {
   border-radius: 0 0 5px 5px;
 }
 
